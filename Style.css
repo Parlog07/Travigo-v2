@@ -1,0 +1,553 @@
+:root{
+   --text-color: #5E6282;
+	--main-color: #181E4B; 
+}
+.Home-Page {
+  min-height: 100vh;                 
+  display: grid;                      
+  padding: 0 2rem;                    
+}
+.home::before{
+    content: url(img/decore\ 02.png);
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+
+/* Navbar Here */
+.navbar {
+    display: flex;
+    align-items: center;
+    font-family: "Poppins";
+    justify-content: space-between;
+    padding: 20px 11em;
+    height: 80px;
+    font-size: 15.5pt;
+    
+}
+
+.bar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 2.2rem;
+    color: #111;
+    text-decoration: none;
+}
+
+.menu {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 55px;
+}
+
+.nav-menu li a {
+    text-decoration: none;
+    color: #1c1c1c;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-menu li a:hover {
+    color: #666;
+}
+
+.btn-sign {
+    background-color: transparent;
+    border: 1px solid #1c1c1c;
+    border-radius: 4px;
+    padding: 8px 16px;
+    font-weight: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: -10px;
+}
+
+.btn-sign:hover {
+    background-color: #1c1c1c;
+    color: white;
+}
+
+.menu li:last-child {
+    position: relative;
+    cursor: pointer;
+}
+
+.menu li:last-child::after {
+    content: "▼";
+    font-size: 0.6rem;
+    margin-left: 6px;
+}
+/* Home category Here */
+.home-text h6{
+    font-family: "poppins";
+    color: #DF6951;
+    padding: 0px;
+    margin: 0px;
+}
+.home{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+}
+.home .home-text {
+    height: 100%;
+     padding-top: 6em;
+}
+.home .home-text h1{
+    color: var(--main-color);
+    font-size: 90px;
+    font-style: "volkhove";
+}
+.home .home-text p{
+    font-family: "Poppins";
+    color: var(--text-color);
+    font-size: 16px;
+}
+.home .home-text h1 span{
+    position: relative;
+}
+.home .home-text h1 span::before{
+    content: url(img/lkhet.png);
+    position: absolute;
+    bottom: -10px;
+    left: 0px;
+    z-index: -1;
+}
+/* Buttons Here */
+.btn-more{
+    border: none;
+    padding: 18px;
+    border-radius: 6px;
+    background-color: #ffa600;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    box-shadow:  0px 4px 12px #ffa600;
+
+}
+.btn-more:hover{
+    background-color: white;
+    color: #ffa600;
+    transition: all 0.4s ease;
+}
+.buttons{
+    display: flex;
+    gap: 20px;
+}
+ .demo {
+  display:block;
+  width: 55px;
+  border-radius: 50%;
+  border: none;
+  color: white;
+  background-color: #DF6951;
+  box-shadow: 0px 4px 12px  #DF6951 ;
+}
+.demo:hover{  
+    background-color: white;
+    color: #DF6951;
+    transition: all 0.4s ease;
+}
+/* h2 here */
+.category-name{
+  justify-content: center;
+  align-items: center;            
+  text-align: center;
+
+}
+.category-name h6{
+    color: var(--text-color);
+    font-family: "Poppins";
+    font-size: 17px;
+    margin-bottom: 6px;    
+    
+}
+.category-name h2{
+    color: var(--main-color);
+    font-size: 50px;
+    margin: 0px;
+}
+/* Categorys Here */
+.Boxes{
+    display: flex;
+  justify-content: center; 
+  align-items: center; 
+  gap: 8px; 
+  padding: 50px 0;
+}
+.Box{
+    padding: 50px;
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+    overflow: visible;
+    transition: all 0.3s ease-in-out;
+}
+.Box:hover{
+    box-shadow: 0px 2px 3px;
+}
+.Boxes h6{
+    text-align: center;
+    color: var(--main-color);
+    font-family: "Poppins";
+    font-size: 19px;
+    padding: 2px;
+    margin: 2px;
+    
+}
+.Boxes p{
+    padding: 0px;
+    margin: 1px;
+    text-align: center;
+    font-family: "Poppins";
+    color:var(--text-color);
+}
+ .Box .icon{
+      position: absolute;
+      bottom: 8px;
+      left: 14%;
+      transform: translateX(-50%);
+      transition: transform 0.3s ease;
+      z-index: -1;
+    }
+
+.Box:hover .icon{
+      transform: translate(-70px, 50px) scale(1.1);
+    }
+/* foooooter Here */
+.footer{
+    display: flex;
+    justify-content: center;
+    gap:40px;
+}
+.footer-col{
+   padding: 22px;
+   margin: 20px;
+}
+.footer-col h2{
+    font-family: "Poppins";
+    font-size: 40px;
+    color: var(--main-color);
+    margin-top: 2px;
+}
+.footer-col p{
+    font-family: "Poppins";
+    color: var(--text-color);
+    font-size: 12px;
+}
+.footer-col h4{
+    font-family: "Poppins";
+    text-align: center;
+    font-weight: bold;
+    font-size: 19px;
+}
+.footer-col ul{
+    text-align: center;
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0px;  
+}
+.footer-col li a{
+    font-family: "Poppins";
+    text-decoration: none;
+    color: var(--text-color);
+}
+#app{
+    font-family: "Poppins";
+    font-size: 20px;
+    text-align: center;
+}
+.app-buttons img{
+    border-radius: 26px;
+}
+.footer-bottom{
+    text-align: center;
+    margin-bottom: 90px;
+    font-family: "Poppins";
+    color: var(--text-color);
+}
+
+/* Destination page Here */
+.Destinations{
+    text-align: center;
+    margin-top: 70px;
+    .titles p{
+        font-family: "Poppins";
+        color: var(--text-color);
+    }
+    .titles h2{
+        color: var(--main-color);
+        font-size: 48px;
+        margin-top: 0px;
+    }
+}
+.Destinations::before{
+    content: url(img/decore\ 01.png);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+/* Boxes on Destinatons */
+.Des-Boxes {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 300px;
+  gap: 40px;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.Des-Box {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  width: 25%;
+  bottom: 0px;
+  height: 450px;
+  background-repeat: no-repeat;
+  background-size: cover;
+    display: flex;
+    align-items: end;
+    overflow: hidden;
+    position: relative;
+}
+
+.Des-Box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 25px 40px rgba(0, 0, 0, 0.15);
+}
+.Des-Box:hover .info{
+    opacity: 1;
+    bottom: 0;
+
+}
+.info {
+    position: absolute;
+  padding: 20px;
+  height: 100px;
+  background-color: white;
+  width: 100%;
+  transition: 0.4s;
+  bottom: -150px;
+  opacity: 0;
+}
+
+.info .top {
+  display: flex;
+
+  gap: 130px;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.info .top h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #2F2F2F;
+}
+
+.info .top span {
+  font-weight: 700;
+  color: #2F2F2F;
+}
+.bottom{
+    display: flex;
+    color: var(--text-color);
+    align-items: center;
+    gap:2px;
+}
+/* Explination of Destination Here */
+.explination{
+    padding-inline: 200px;
+    margin: 100px;
+    .exp-titles h6{
+        font-family: "Poppins";
+        color: var(--text-color);
+        margin-top: 0px;
+    }
+    .exp-titles h2{
+        color: var(--main-color);
+        font-size: 60px;
+        margin-bottom: 0;
+    }
+}
+
+.Steps .exp-des{
+    
+    h6{
+        color: var(--main-color);
+        font-family: "Poppins";
+        font-size: 16px;
+    }
+    p{
+        font-family: "Poppins";
+    }
+}
+/* Footer - Destination */
+.des-footer{
+    position: relative;
+}
+.footer::before{
+    content: url(img/Decore03.png);
+    position: absolute;
+    right: -30px;
+    bottom: -100px;
+    z-index: -1;
+}
+/* About-Page Here */
+.About-Body::before{
+    content: url(img/decore\ 02.png);
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    z-index: -1;
+}
+.description h2{
+    color: var(--main-color);
+    font-size: 48px;
+    text-align: center;
+}
+.Text-Descrip{
+    background-color: transparent;
+    box-shadow:0px 5px 30px rgba(0, 0, 0, .09);
+    border-radius: 22px;
+    margin-inline: 350px;
+    padding: 20px;
+}
+.Text-Descrip p{
+    color: var(--text-color);
+    font-weight: bold;
+    text-align: center;
+    font-family: "Poppins";
+    font-size: 20px;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+}
+
+
+/* Contact Form */
+.contact-form {
+    background: rgb(255, 255, 255);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 30px rgba(0, 0, 0, .07);
+    margin-inline: 600px;
+    margin-top: 100px;
+    margin-bottom: 40px;
+}
+
+.contact-form h2 {
+    color: black;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: 700;
+    text-shadow: 0px 2px 1px #111;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: black;
+    font-family: "Poppins";
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: none;
+    background-color: #FFF1DA;
+    border-radius: 25px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0px 1px 1px 0.7px;
+    box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: grey;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+}
+
+.form-group textarea {
+    resize: none;
+    min-height: 120px;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 15px;
+    background:linear-gradient(to right, #FFF0D8, #FFD99A) ;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.submit-btn:hover {
+    background: linear-gradient(135deg, #FFD99A, #FFF0D8);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(52, 152, 219, 0.4);
+}
+
+.submit-btn:active {
+    transform: translateY(0);
+}
+.Contact-footer{
+    position: relative;
+}
+.Contact-Page::before{
+    content: url(img/decore\ 02.png);
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    z-index: -1;
+}
+.Contact-footer .footer::before{
+    content: url(img/Decore.png);
+    position: absolute;
+    Left: -30px;
+    bottom: -240px;
+    z-index: -1;
+}
