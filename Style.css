@@ -1,13 +1,15 @@
-:root{
-   --text-color: #5E6282;
-	--main-color: #181E4B; 
+:root {
+    --text-color: #5E6282;
+    --main-color: #181E4B;
 }
+
 .Home-Page {
-  min-height: 100vh;                 
-  display: grid;                      
-  padding: 0 2rem;                    
+    min-height: 100vh;
+    display: grid;
+    padding: 0 2rem;
 }
-.home::before{
+
+.home::before {
     content: url(img/decore\ 02.png);
     position: absolute;
     right: 0;
@@ -24,7 +26,7 @@
     padding: 20px 11em;
     height: 80px;
     font-size: 15.5pt;
-    
+
 }
 
 .bar-container {
@@ -93,14 +95,16 @@
     font-size: 0.6rem;
     margin-left: 6px;
 }
+
 /* Home category Here */
-.home-text h6{
+.home-text h6 {
     font-family: "poppins";
     color: #DF6951;
     padding: 0px;
     margin: 0px;
 }
-.home{
+
+.home {
     display: flex;
     width: 100%;
     height: 100vh;
@@ -108,32 +112,38 @@
     align-items: center;
     font-size: 32px;
 }
+
 .home .home-text {
     height: 100%;
-     padding-top: 6em;
+    padding-top: 6em;
 }
-.home .home-text h1{
+
+.home .home-text h1 {
     color: var(--main-color);
     font-size: 90px;
     font-style: "volkhove";
 }
-.home .home-text p{
+
+.home .home-text p {
     font-family: "Poppins";
     color: var(--text-color);
     font-size: 16px;
 }
-.home .home-text h1 span{
+
+.home .home-text h1 span {
     position: relative;
 }
-.home .home-text h1 span::before{
+
+.home .home-text h1 span::before {
     content: url(img/lkhet.png);
     position: absolute;
     bottom: -10px;
     left: 0px;
     z-index: -1;
 }
+
 /* Buttons Here */
-.btn-more{
+.btn-more {
     border: none;
     padding: 18px;
     border-radius: 6px;
@@ -141,60 +151,69 @@
     color: white;
     text-align: center;
     font-size: 14px;
-    box-shadow:  0px 4px 12px #ffa600;
+    box-shadow: 0px 4px 12px #ffa600;
 
 }
-.btn-more:hover{
+
+.btn-more:hover {
     background-color: white;
     color: #ffa600;
     transition: all 0.4s ease;
 }
-.buttons{
+
+.buttons {
     display: flex;
     gap: 20px;
 }
- .demo {
-  display:block;
-  width: 55px;
-  border-radius: 50%;
-  border: none;
-  color: white;
-  background-color: #DF6951;
-  box-shadow: 0px 4px 12px  #DF6951 ;
+
+.demo {
+    display: block;
+    width: 55px;
+    border-radius: 50%;
+    border: none;
+    color: white;
+    background-color: #DF6951;
+    box-shadow: 0px 4px 12px #DF6951;
 }
-.demo:hover{  
+
+.demo:hover {
     background-color: white;
     color: #DF6951;
     transition: all 0.4s ease;
 }
+
 /* h2 here */
-.category-name{
-  justify-content: center;
-  align-items: center;            
-  text-align: center;
+.category-name {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 
 }
-.category-name h6{
+
+.category-name h6 {
     color: var(--text-color);
     font-family: "Poppins";
     font-size: 17px;
-    margin-bottom: 6px;    
-    
+    margin-bottom: 6px;
+
 }
-.category-name h2{
+
+.category-name h2 {
     color: var(--main-color);
     font-size: 50px;
     margin: 0px;
 }
+
 /* Categorys Here */
-.Boxes{
+.Boxes {
     display: flex;
-  justify-content: center; 
-  align-items: center; 
-  gap: 8px; 
-  padding: 50px 0;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 50px 0;
 }
-.Box{
+
+.Box {
     padding: 50px;
     background-color: white;
     border-radius: 30px;
@@ -207,84 +226,98 @@
     overflow: visible;
     transition: all 0.3s ease-in-out;
 }
-.Box:hover{
+
+.Box:hover {
     box-shadow: 0px 2px 3px;
 }
-.Boxes h6{
+
+.Boxes h6 {
     text-align: center;
     color: var(--main-color);
     font-family: "Poppins";
     font-size: 19px;
     padding: 2px;
     margin: 2px;
-    
+
 }
-.Boxes p{
+
+.Boxes p {
     padding: 0px;
     margin: 1px;
     text-align: center;
     font-family: "Poppins";
-    color:var(--text-color);
+    color: var(--text-color);
 }
- .Box .icon{
-      position: absolute;
-      bottom: 8px;
-      left: 14%;
-      transform: translateX(-50%);
-      transition: transform 0.3s ease;
-      z-index: -1;
-    }
 
-.Box:hover .icon{
-      transform: translate(-70px, 50px) scale(1.1);
-    }
+.Box .icon {
+    position: absolute;
+    bottom: 8px;
+    left: 14%;
+    transform: translateX(-50%);
+    transition: transform 0.3s ease;
+    z-index: -1;
+}
+
+.Box:hover .icon {
+    transform: translate(-70px, 50px) scale(1.1);
+}
+
 /* foooooter Here */
-.footer{
+.footer {
     display: flex;
     justify-content: center;
-    gap:40px;
+    gap: 40px;
 }
-.footer-col{
-   padding: 22px;
-   margin: 20px;
+
+.footer-col {
+    padding: 22px;
+    margin: 20px;
 }
-.footer-col h2{
+
+.footer-col h2 {
     font-family: "Poppins";
     font-size: 40px;
     color: var(--main-color);
     margin-top: 2px;
 }
-.footer-col p{
+
+.footer-col p {
     font-family: "Poppins";
     color: var(--text-color);
     font-size: 12px;
 }
-.footer-col h4{
+
+.footer-col h4 {
     font-family: "Poppins";
     text-align: center;
     font-weight: bold;
     font-size: 19px;
 }
-.footer-col ul{
+
+.footer-col ul {
     text-align: center;
     list-style: none;
     margin-left: 0;
-    padding-left: 0px;  
+    padding-left: 0px;
 }
-.footer-col li a{
+
+.footer-col li a {
     font-family: "Poppins";
     text-decoration: none;
     color: var(--text-color);
 }
-#app{
+
+#app {
     font-family: "Poppins";
     font-size: 20px;
     text-align: center;
 }
-.app-buttons img{
+
+.app-buttons img {
     border-radius: 26px;
 }
-.footer-bottom{
+
+.footer-bottom {
     text-align: center;
     margin-bottom: 90px;
     font-family: "Poppins";
@@ -292,47 +325,51 @@
 }
 
 /* Destination page Here */
-.Destinations{
+.Destinations {
     text-align: center;
     margin-top: 70px;
-    .titles p{
+
+    .titles p {
         font-family: "Poppins";
         color: var(--text-color);
     }
-    .titles h2{
+
+    .titles h2 {
         color: var(--main-color);
         font-size: 48px;
         margin-top: 0px;
     }
 }
-.Destinations::before{
+
+.Destinations::before {
     content: url(img/decore\ 01.png);
     position: absolute;
     left: 0;
     top: 0;
     z-index: -1;
 }
+
 /* Boxes on Destinatons */
 .Des-Boxes {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 300px;
-  gap: 40px;
-  justify-content: center;
-  margin-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 300px;
+    gap: 40px;
+    justify-content: center;
+    margin-bottom: 40px;
 }
 
 .Des-Box {
-  background: white;
-  border-radius: 20px;
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  cursor: pointer;
-  width: 25%;
-  bottom: 0px;
-  height: 450px;
-  background-repeat: no-repeat;
-  background-size: cover;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    width: 25%;
+    bottom: 0px;
+    height: 450px;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     align-items: end;
     overflow: hidden;
@@ -340,108 +377,153 @@
 }
 
 .Des-Box:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 25px 40px rgba(0, 0, 0, 0.15);
+    transform: translateY(-10px);
+    box-shadow: 0 25px 40px rgba(0, 0, 0, 0.15);
 }
-.Des-Box:hover .info{
+
+.Des-Box:hover .info {
     opacity: 1;
     bottom: 0;
 
 }
-.info {
+
+.info{
     position: absolute;
-  padding: 20px;
-  height: 100px;
-  background-color: white;
-  width: 100%;
-  transition: 0.4s;
-  bottom: -150px;
-  opacity: 0;
+    padding: 20px;
+    height: 100px;
+    background-color: white;
+    width: 100%;
+    transition: 0.4s;
+    bottom: -150px;
+    opacity: 0;
 }
 
-.info .top {
-  display: flex;
+.info .top , .Boxo2 .info .top{
+    display: flex;
 
-  gap: 130px;
-  align-items: center;
-  margin-bottom: 15px;
+    gap: 130px;
+    align-items: center;
+    margin-bottom: 15px;
 }
 
-.info .top h3 {
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: #2F2F2F;
+.info .top h3 , .Boxo2 .info .top h3{
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #2F2F2F;
 }
 
-.info .top span {
-  font-weight: 700;
-  color: #2F2F2F;
+.info .top span , .Boxo2 .info .top span{
+    font-weight: 700;
+    color: #2F2F2F;
 }
-.bottom{
+
+.bottom , .Boxo2 .bottom{
     display: flex;
     color: var(--text-color);
     align-items: center;
-    gap:2px;
+    gap: 2px;
 }
+
 /* Explination of Destination Here */
-.explination{
-    padding-inline: 200px;
-    margin: 100px;
-    .exp-titles h6{
+.explination {
+    display: flex;
+    margin: 10em 18em 0;
+}
+.Boxo2 {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    width: 300px;
+    bottom: 0px;
+    height: 450px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: end;
+    overflow: hidden;
+}
+.Boxo2:first-child{
+    position: absolute;
+    top:100px;
+    left: 100px;
+    z-index: 2;
+}
+.Boxo2 .info{
+    bottom: 0;
+    opacity: 1;
+}
+
+.exp-titles h6 {
         font-family: "Poppins";
         color: var(--text-color);
         margin-top: 0px;
     }
-    .exp-titles h2{
+.exp-titles h2 {
         color: var(--main-color);
         font-size: 60px;
         margin-bottom: 0;
     }
+.Pict-exp{
+    width: 50%;
+    position: relative;
 }
+.Steps{
+    width: 50%;
+}
+.Steps .exp-des {
 
-.Steps .exp-des{
-    
-    h6{
+    h6 {
         color: var(--main-color);
         font-family: "Poppins";
         font-size: 16px;
+        margin-bottom: 1px;
     }
-    p{
+
+    p {
         font-family: "Poppins";
     }
 }
+
 /* Footer - Destination */
-.des-footer{
+.des-footer {
     position: relative;
 }
-.footer::before{
+
+.footer::before {
     content: url(img/Decore03.png);
     position: absolute;
     right: -30px;
     bottom: -100px;
     z-index: -1;
 }
+
 /* About-Page Here */
-.About-Body::before{
+.About-Body::before {
     content: url(img/decore\ 02.png);
     position: absolute;
     right: 0px;
     top: 0px;
     z-index: -1;
 }
-.description h2{
+
+.description h2 {
     color: var(--main-color);
     font-size: 48px;
     text-align: center;
 }
-.Text-Descrip{
+
+.Text-Descrip {
     background-color: transparent;
-    box-shadow:0px 5px 30px rgba(0, 0, 0, .09);
+    box-shadow: 0px 5px 30px rgba(0, 0, 0, .09);
     border-radius: 22px;
     margin-inline: 350px;
     padding: 20px;
+
 }
-.Text-Descrip p{
+
+.Text-Descrip p {
     color: var(--text-color);
     font-weight: bold;
     text-align: center;
@@ -451,6 +533,121 @@
     word-spacing: 4px;
 }
 
+.people-Say {
+    display: flex;
+    padding: 40px;
+    margin: 150px;
+    align-items: center;
+    justify-content: center;
+    gap: 200px;
+
+}
+
+.titles-Say h6 {
+    font-family: "Poppins";
+    margin: 0px;
+    color: var(--text-color);
+}
+
+.titles-Say h2 {
+    color: var(--main-color);
+    font-size: 45px;
+    margin-top: 0;
+}
+
+.People-Text {
+    background-color: transparent;
+    box-shadow: 0px 5px 30px rgba(0, 0, 0, .09);
+    border-radius: 16px;
+    padding: 30px 100px;
+    color: var(--text-color);
+    position: relative;
+
+    h6 {
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+}
+
+.People-Text::before {
+    position: absolute;
+    top: -23px;
+    left: -23px;
+    content: url(img/face.png);
+
+}
+
+/* LOGO grp HERE */
+.logos .Logo-grp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 45px;
+}
+
+.Logo-grp img {
+    filter: grayscale();
+    transition: .3s;
+}
+
+.Logo-grp img:hover {
+    filter: none;
+    transform: scale(1.2);
+}
+
+/* Subscribe Here */
+.Subscribe-Form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sub-til {
+    background-color: rgba(223, 215, 249, .2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 80px;
+    width: fit-content;
+    font-size: 16pt;
+    text-align: center;
+    font-family: "Poppins";
+    border-radius: 90px 4px 4px 4px;
+    position: relative;
+}
+
+.sub-til::before {
+    content: url(img/Saroukh.png);
+    position: absolute;
+    top: -32px;
+    right: -32px;
+}
+
+.sub-til .input input {
+    background-color: white;
+    border-radius: 5px;
+    border: none;
+    width: 300px;
+    height: 42px;
+    padding-left: 12px;
+}
+
+#Sub {
+    height: 42px;
+    border: none;
+    background: linear-gradient(180deg, #FF946D, #FF7D68);
+    color: white;
+    padding: 10px 30px;
+    border-radius: 5px;
+    transition: all 0.3s;
+
+}
+
+#Sub:hover {
+    background: white;
+    color: #FF7D68;
+}
 
 /* Contact Form */
 .contact-form {
@@ -513,7 +710,7 @@
 .submit-btn {
     width: 100%;
     padding: 15px;
-    background:linear-gradient(to right, #FFF0D8, #FFD99A) ;
+    background: linear-gradient(to right, #FFF0D8, #FFD99A);
     color: white;
     border: none;
     border-radius: 8px;
@@ -534,17 +731,20 @@
 .submit-btn:active {
     transform: translateY(0);
 }
-.Contact-footer{
+
+.Contact-footer {
     position: relative;
 }
-.Contact-Page::before{
+
+.Contact-Page::before {
     content: url(img/decore\ 02.png);
     position: absolute;
     right: 0px;
     top: 0px;
     z-index: -1;
 }
-.Contact-footer .footer::before{
+
+.Contact-footer .footer::before {
     content: url(img/Decore.png);
     position: absolute;
     Left: -30px;
